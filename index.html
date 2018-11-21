@@ -11,24 +11,24 @@
 <div id = "opening-image" align="center" v-on:click = "show = !show">
   <table cellspacing="0" cellpadding="0">
     <tr>
-    <td>
-      <transition
-        duration="{leave: 3000}"
-        name="fade"
-        leave-active-class="animated fadeOutLeft"
-      >
-        <img src="src/assets/wild01.jpg" v-if="show"/>
-      </transition>
-    </td>
-    <td>
-      <transition
-        duration="{leave: 3000}"
-        name="fade"
-        leave-active-class="animated fadeOutRight"
-      >
-        <img src="src/assets/wild02.jpg" v-if="show"/>
-      </transition>
-    </td>
+      <td>
+        <transition
+          duration="{leave: 3000}"
+          name="fade"
+          leave-active-class="animated fadeOutLeft"
+        >
+          <img src="src/assets/wild01.jpg" v-if="show"/>
+        </transition>
+      </td>
+      <td>
+        <transition
+          duration="{leave: 3000}"
+          name="fade"
+          leave-active-class="animated fadeOutRight"
+        >
+          <img src="src/assets/wild02.jpg" v-if="show"/>
+        </transition>
+      </td>
     </tr>
   </table>
 
@@ -69,12 +69,10 @@
   var demo = new Vue({
     // DOM 元素，挂载视图模型
     el: '#main',
-
     // 定义属性，并设置初始值
     data: {
       active: 'home'
     },
-
     // 点击菜单使用的函数
     methods: {
       makeActive: function(item){
