@@ -4,33 +4,40 @@
   <meta charset="utf-8">
   <title></title>
   <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="src/assets/animate.css">
 
-  <style>
-    /* 可以设置不同的进入和离开动画 */
-    /* 设置持续时间和动画函数 */
-    .slide-fade-enter-active {
-      transition: all .3s ease;
-    }
-    .slide-fade-leave-active {
-      transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-    }
-    .slide-fade-enter, .slide-fade-leave-to
-      /* .slide-fade-leave-active 用于 2.1.8 以下版本 */ {
-      transform: translateX(10px);
-      opacity: 0;
-    }
-  </style>
 </head>
 <body>
-<div id = "databinding" align="center">
+<div id = "opening-image" align="center" v-on:click = "show = !show">
+  <table cellspacing="0" cellpadding="0">
+    <tr>
+    <td>
+      <transition
+        duration="{leave: 3000}"
+        name="fade"
+        leave-active-class="animated fadeOutLeft"
+      >
+        <img src="src/assets/wild01.jpg" v-if="show"/>
+      </transition>
+    </td>
+    <td>
+      <transition
+        duration="{leave: 3000}"
+        name="fade"
+        leave-active-class="animated fadeOutRight"
+      >
+        <img src="src/assets/wild02.jpg" v-if="show"/>
+      </transition>
+    </td>
+    </tr>
+  </table>
 
-  <transition name="slide-fade">
-    <img v-on:click = "show = !show" src="/src/assets/wild.jpg" v-if="show"/>
-  </transition>
+
+
 </div>
 <script type = "text/javascript">
   new Vue({
-    el: '#databinding',
+    el: '#opening-image',
     data: {
       show: true
     }
@@ -42,14 +49,14 @@
   <!-- 激活的菜单样式为  active 类 -->
   <!-- 为了阻止链接在点击时跳转，我们使用了 "prevent" 修饰符 (preventDefault 的简称)。 -->
 
-  <nav v-bind:class="active" v-on:click.prevent>
+  <nav :class="active" @click.prevent>
 
     <!-- 当菜单上的链接被点击时，我们调用了 makeActive 方法, 该方法在 Vue 实例中创建。 -->
 
-    <a href="#" class="home" v-on:click="makeActive('home')">Home</a>
-    <a href="#" class="projects" v-on:click="makeActive('projects')">Projects</a>
-    <a href="#" class="services" v-on:click="makeActive('services')">Services</a>
-    <a href="#" class="contact" v-on:click="makeActive('contact')">Contact</a>
+    <a href="#" class="home" @click="makeActive('home')">Home</a>
+    <a href="#" class="projects" @click="makeActive('projects')">Projects</a>
+    <a href="#" class="services" @click="makeActive('services')">Services</a>
+    <a href="#" class="contact" @click="makeActive('contact')">Contact</a>
   </nav>
 
   <!-- 以下 "active" 变量会根据当前选中的值来自动变换 -->
