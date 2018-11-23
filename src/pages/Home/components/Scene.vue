@@ -1,7 +1,7 @@
 <template>
   <div class="food">
     <div class="title">
-      食在珞珈
+      景在珞珈
     </div>
     <ul>
       <li class="item border-bottom" v-for="item of foodList" :key="item.id">
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: 'Food',
+  name: 'Scene',
   data () {
     return {
       foodList: [{
