@@ -48,4 +48,7 @@ export default {
   .img-content{
     width: 100%;
   }
+  table{
+    margin: 0 auto;
+  }
 </style>

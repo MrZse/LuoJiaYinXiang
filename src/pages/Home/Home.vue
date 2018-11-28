@@ -2,26 +2,26 @@
     <div>
       <home-header></home-header>
       <home-swiper></home-swiper>
-      <food></food>
+      <generation></generation>
       <scene></scene>
-      <culture></culture>
+      <history></history>
     </div>
 </template>
 
 <script>
 import HomeHeader from './components/Header'
 import HomeSwiper from './components/Swiper'
-import Food from './components/Food'
+import Generation from './components/Generation'
 import Scene from './components/Scene'
-import Culture from './components/Culture'
+import History from './components/History'
 export default {
   name: 'Home',
   components: {
     HomeHeader,
     HomeSwiper,
-    Food,
+    Generation,
     Scene,
-    Culture
+    History
   }
 }
 </script>

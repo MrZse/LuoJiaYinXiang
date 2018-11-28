@@ -1,7 +1,7 @@
 <template>
-  <div class="scene">
+  <div class="History">
     <div class="header">
-      <p class="title">旖旎风景</p>
+      <p class="title">历史根脉</p>
     </div>
     <ul v-for="(line,index) of lines" :key="index">
       <router-link :to="'/detail/' + item.id" tag="li" class="item border-bottom" v-for="item of line" :key="item.id">
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'Scene',
+  name: 'History',
   data () {
     return {
       foodList: [{
