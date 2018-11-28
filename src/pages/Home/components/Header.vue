@@ -1,7 +1,7 @@
 <template>
   <header name="Header" class="header">
-    <nav>
-      <router-link :to="'home'" >
+    <nav class="nav">
+      <router-link :to="{ path: '/home'}" replace>
         <p class="header-title">
           主页
         </p>
@@ -27,13 +27,15 @@ export default {
 </script>
 
 <style scoped>
-  .header {
+  .nav {
+    padding-bottom: 9.375%;
     width: 100%;
-    height: 0;
-    margin-bottom: 5%;
+    background-image: url("http://i0.hdslb.com/bfs/archive/6c42c40ed54f4bb5ea491894aff693878afa6580.png");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   .header-title {
     margin-left: 25%;
-    margin-top: 1%;
+    margin-top: 0;
   }
 </style>

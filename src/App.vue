@@ -11,5 +11,7 @@ export default {
 </script>
 
 <style>
-
+  #app {
+    background-image: url("/static/images/full-bloom.png");
+  }
 </style>

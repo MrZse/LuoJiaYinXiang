@@ -3,12 +3,12 @@
   "data": {
     "swiperList": [{
         "id": "0001",
-        "imgUrl": "require('@/assets/wild.jpg')",
+        "imgUrl": "static/images/wild.jpg",
         "title": "wild"
       },
       {
         "id": "0002",
-        "imgUrl": "require('@/assets/BN.jpg')",
+        "imgUrl": "static/images/BN.jpg",
         "title": "bn"
     }],
     "generationTitle": "时代之光",

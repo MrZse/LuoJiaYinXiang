@@ -36,6 +36,7 @@ export default {
 <style scoped>
   .wrapper {
     width: 100%;
+    margin-top: 2rem;
   }
   .swiper{
     display: block;
@@ -43,9 +44,9 @@ export default {
     position: relative;
     text-align: center;
     overflow: hidden;
-    width: 50%;
+    width: 80%;
     height: 0;
-    padding-bottom: 28.1%;
+    padding-bottom: 40%;
     background: #eee
   }
   .swiper-image{
