@@ -3,14 +3,15 @@
     <div class="swiper">
       <swiper :options="swiperOption">
         <swiper-slide v-for="item of swiperList" v-bind:key="item.id">
-          <div><img class="swiper-image" :src="item.imgUrl"></div>
-          <div class="item-view"><p class="title-content">{{item.title}}</p></div>
+          <router-link :to="'/detail/' + item.id">
+            <div><img class="swiper-image" :src="item.imgUrl"></div>
+            <div class="item-view"><p class="title-content">{{item.title}}</p></div>
+          </router-link>
         </swiper-slide>
         <div class="swiper-pagination"  slot="pagination"></div>
       </swiper>
     </div>
   </div>
-
 </template>
 
 <script>

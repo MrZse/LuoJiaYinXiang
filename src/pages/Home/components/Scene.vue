@@ -1,15 +1,17 @@
 <template>
-  <div class="scene">
+  <div>
     <div class="header">
-      <p class="title">旖旎风景</p>
+      <p class="title">旖旎风光</p>
     </div>
     <ul v-for="(line,index) of lines" :key="index">
-      <router-link :to="'/detail/' + item.id" tag="li" class="item border-bottom" v-for="item of line" :key="item.id">
-        <div class="item-content">
-          <img class="item-img" :src="item.imgUrl"/>
-          <p class="item-title">{{item.title}}</p>
-        </div>
-      </router-link>
+      <li v-for="item of line" :key="item.id">
+        <router-link :to="'/detail/' + item.id" class="item border-bottom" >
+          <div class="item-content">
+            <img class="item-img" :src="item.imgUrl"/>
+            <p class="item-title">{{item.title}}</p>
+          </div>
+        </router-link>
+      </li>
     </ul>
   </div>
 </template>
@@ -59,9 +61,6 @@ export default {
 </script>
 
 <style scoped>
-  .scene {
-    padding: auto;
-  }
   .header
   {
     width:100%;
@@ -80,11 +79,14 @@ export default {
     margin: 0 auto;
   }
   .item {
-    padding-left: 3rem;
+    color:black;
+    text-decoration: none;
+  }
+  .item p:active {
+    color:red;
   }
   .item-content {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    margin-left: 4rem;
     width: 100%;
     text-align: center;
   }
