@@ -43,12 +43,14 @@ export default {
   .header
   {
     width:100%;
-    margin-top: 3rem;
-    background: #eee;
+    margin-top: 0;
+    background: url("/static/images/full-bloom.png");
+    background-size: contain;
     text-indent: .5rem;
   }
   .title {
     margin-left: 8rem;
+    margin-top: 0;
     line-height: 5rem;
   }
   ul {

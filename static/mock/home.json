@@ -2,14 +2,33 @@
   "ret": true,
   "data": {
     "swiperList": [{
-        "id": "0001",
-        "imgUrl": "static/images/wild.jpg",
-        "title": "wild"
-      },
-      {
-        "id": "0002",
-        "imgUrl": "static/images/BN.jpg",
-        "title": "bn"
+      "id": "0001",
+      "imgUrl": "static/images/swiper/1.jpg",
+      "title": "wild"
+    }, {
+      "id": "0002",
+      "imgUrl": "static/images/swiper/2.jpg",
+      "title": "bn"
+    }, {
+      "id": "0003",
+      "imgUrl": "static/images/swiper/3.jpg",
+      "title": "wild"
+    }, {
+      "id": "0004",
+      "imgUrl": "static/images/swiper/4.jpg",
+      "title": "wild"
+    }, {
+      "id": "0005",
+      "imgUrl": "static/images/swiper/5.jpg",
+      "title": "wild"
+    }, {
+      "id": "0006",
+      "imgUrl": "static/images/swiper/6.jpg",
+      "title": "wild"
+    }, {
+      "id": "0007",
+      "imgUrl": "static/images/swiper/7.jpg",
+      "title": "wild"
     }],
     "generationTitle": "时代之光",
     "generationList": [{

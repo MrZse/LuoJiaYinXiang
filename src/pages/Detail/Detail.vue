@@ -7,8 +7,8 @@
     <div class="wrapper">
       <img  class="picture" :src="imgUrl"/>
     </div>
-    <article class="text">
-      {{article}}
+    <article class="text" v-for="(item,index) of article" :key="index">
+      <p>&emsp;&emsp;{{item.content}}</p>
     </article>
   </div>
 </template>
@@ -25,7 +25,7 @@ export default {
     return {
       imgUrl: '',
       title: '',
-      article: ''
+      article: []
     }
   },
   mounted () {
@@ -49,28 +49,30 @@ export default {
 
 <style scoped>
   .wrapper {
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
-    width: 70%;
-    border:5px solid red;
+    width: 61.8%;
+    border-image-sourc: url(/static/images/full-bloom.png) 0 12 0 12 stretch stretch;
   }
   .picture {
     width: 100%;
   }
   .text {
     font-size: 1.5rem;
-    width: 70%;
+    width: 61.8%;
     margin: 2rem auto;
   }
   .header
   {
     width:100%;
-    margin-top: 3rem;
-    background: #eee;
+    margin-top: 0;
+    background: url("/static/images/full-bloom.png");
+    background-size: contain;
     text-indent: .5rem;
   }
   .title {
     margin-left: 8rem;
     line-height: 5rem;
+    margin-top: 0;
   }
 </style>

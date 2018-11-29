@@ -1,10 +1,14 @@
 <template>
   <header name="Header" class="header">
     <nav class="nav">
-      <router-link :to="{ path: '/home'}" replace>
-        <p class="header-title">
-          主页
-        </p>
+      <router-link :to="{ path: '/home'}" replace class="link">
+        <div class="wrapper">
+          <img src="/static/images/icon.png" class="icon">
+          <p class="header-title">
+            主&emsp;页
+          </p>
+          <img src="/static/images/title.png" class="title">
+        </div>
       </router-link>
     </nav>
   </header>
@@ -28,14 +32,32 @@ export default {
 
 <style scoped>
   .nav {
-    padding-bottom: 9.375%;
-    width: 100%;
-    background-image: url("http://i0.hdslb.com/bfs/archive/6c42c40ed54f4bb5ea491894aff693878afa6580.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+    height: 100%;
+    background-image: url("/static/images/header-bg.jpg");
+    background-size: cover;
+  }
+  .wrapper {
+    display: flex;
   }
   .header-title {
-    margin-left: 25%;
-    margin-top: 0;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    color: white;
+    flex: 3;
+    font-size: 2rem;
+  }
+  .link {
+    text-decoration: none;
+  }
+  .title,
+  .icon {
+    height: 10rem;
+    flex: 0.5;
+  }
+  .icon{
+    padding-left: 2rem;
+  }
+  .title {
+    padding-right: 2rem;
   }
 </style>
