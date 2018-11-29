@@ -7,7 +7,7 @@
               name="fade"
               leave-active-class="animated fadeOutLeft"
             >
-              <img class="img-content" src="@/assets/wild01.jpg" v-if="show"/>
+              <img class="img-content" src="/static/images/opening/1.jpg" v-if="show"/>
             </transition>
           </td>
           <td class="opening-image-right">
@@ -15,7 +15,7 @@
               name="fade"
               leave-active-class="animated fadeOutRight"
             >
-              <img class="img-content" src="@/assets/wild02.jpg" v-if="show"/>
+              <img class="img-content" src="/static/images/opening/2.jpg" v-if="show"/>
             </transition>
           </td>
         </tr>

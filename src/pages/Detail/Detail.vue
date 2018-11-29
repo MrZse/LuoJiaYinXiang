@@ -4,7 +4,7 @@
     <div class="header">
       <p class="title">{{title}}</p>
     </div>
-    <div class="wrapper">
+    <div class="wrapper" id="imgwrapper">
       <img  class="picture" :src="imgUrl"/>
     </div>
     <article class="text" v-for="(item,index) of article" :key="index">
@@ -30,12 +30,19 @@ export default {
   },
   mounted () {
     this.getDetailInfo()
+    var wrapper = document.getElementById('imgwrapper')
+    if (this.$route.params.id < 2000) {
+      wrapper.style.width = '40%'
+    } else {
+      wrapper.style.width = '61.8%'
+    }
   },
   methods: {
     getDetailInfo () {
       axios.get('/static/mock/detail' + this.$route.params.id + '.json').then(this.getDetailInfoSucc)
     },
     getDetailInfoSucc (res) {
+      console.log(res)
       res = res.data
       if (res.ret) {
         this.imgUrl = res.imgUrl
@@ -52,7 +59,6 @@ export default {
     margin: auto;
     text-align: center;
     width: 61.8%;
-    border-image-sourc: url(/static/images/full-bloom.png) 0 12 0 12 stretch stretch;
   }
   .picture {
     width: 100%;

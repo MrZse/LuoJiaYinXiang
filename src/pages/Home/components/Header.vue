@@ -3,11 +3,11 @@
     <nav class="nav">
       <router-link :to="{ path: '/home'}" replace class="link">
         <div class="wrapper">
-          <img src="/static/images/icon.png" class="icon">
+          <img src="/static/images/header/icon.png" class="icon">
           <p class="header-title">
             主&emsp;页
           </p>
-          <img src="/static/images/title.png" class="title">
+          <img src="/static/images/header/title.png" class="title">
         </div>
       </router-link>
     </nav>
@@ -33,7 +33,7 @@ export default {
 <style scoped>
   .nav {
     height: 100%;
-    background-image: url("/static/images/header-bg.jpg");
+    background-image: url("/static/images/header/header-bg.jpg");
     background-size: cover;
   }
   .wrapper {

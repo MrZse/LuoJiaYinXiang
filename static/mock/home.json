@@ -31,58 +31,83 @@
       "title": "wild"
     }],
     "generationTitle": "时代之光",
-    "generationList": [{
-      "id": "0001",
-      "imgUrl": "http://img1.qunarzz.com/sight/p0/1705/99/99cad7081abb9771a3.img.jpg_200x200_d86753f0.jpg",
-      "title": "知音号游船"
+    "generationList": [
+      {
+      "id": "1001",
+      "imgUrl": "static/images/generation/(1)AiLuMing.jpg",
+      "title": "艾路明"
+      }, {
+      "id": "1002",
+      "imgUrl": "static/images/generation/(1)ChenDongSheng.jpg",
+      "title": "陈东升"
     }, {
-      "id": "0002",
-      "imgUrl": "http://img1.qunarzz.com/sight/p0/1603/b1/b1da46b5326eb99e90.water.jpg_200x200_2f0a2f3f.jpg",
-      "title": "武汉欢乐谷"
+      "id": "1003",
+      "imgUrl": "static/images/generation/(1)LeiJun.jpg",
+      "title": "雷军"
+    },{
+      "id": "1004",
+      "imgUrl": "static/images/generation/(1)LiDa.jpg",
+      "title": "李达"
     }, {
-      "id": "0003",
-      "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/10/1012e4a2c398409c.water.jpg_200x200_366b12f8.jpg",
-      "title": "云雾山"
+      "id": "1005",
+      "imgUrl": "static/images/generation/(1)LiSiGuang.jpg",
+      "title": "李四光"
     }, {
-      "id": "0004",
-      "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/10/1012e4a2c398409c.water.jpg_200x200_366b12f8.jpg",
-      "title": "云雾山"
+      "id": "1006",
+      "imgUrl": "static/images/generation/(1)WenYiDuo.jpg",
+      "title": "闻一多"
+    }, {
+      "id": "1007",
+      "imgUrl": "static/images/generation/(1)ZhangZhiDong.jpg",
+      "title": "张之洞"
     }],
     "sceneTitle": "旖旎风光",
     "sceneList": [{
-      "id": "0001",
-      "imgUrl": "http://img1.qunarzz.com/sight/p0/1705/99/99cad7081abb9771a3.img.jpg_200x200_d86753f0.jpg",
-      "title": "知音号游船"
+      "id": "2001",
+      "imgUrl": "static/images/scene/(0)MeiYuan.jpg",
+      "title": "梅园"
     }, {
-      "id": "0002",
-      "imgUrl": "http://img1.qunarzz.com/sight/p0/1603/b1/b1da46b5326eb99e90.water.jpg_200x200_2f0a2f3f.jpg",
-      "title": "武汉欢乐谷"
+      "id": "2002",
+      "imgUrl": "static/images/scene/(0)PaiFang.jpg",
+      "title": "武大牌坊"
     }, {
-      "id": "0003",
-      "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/10/1012e4a2c398409c.water.jpg_200x200_366b12f8.jpg",
-      "title": "云雾山"
+      "id": "2003",
+      "imgUrl": "static/images/scene/(0)Tree.jpg",
+      "title": "银杏"
     }, {
-      "id": "0004",
-      "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/10/1012e4a2c398409c.water.jpg_200x200_366b12f8.jpg",
-      "title": "云雾山"
+      "id": "2004",
+      "imgUrl": "static/images/scene/(0)XingHu1.jpg",
+      "title": "星湖"
+    }, {
+      "id": "2005",
+      "imgUrl": "static/images/scene/(0)Ying.jpg",
+      "title": "樱花"
     }],
     "historyTitle": "历史根脉",
     "historyList": [{
-      "id": "0001",
-      "imgUrl": "http://img1.qunarzz.com/sight/p0/1705/99/99cad7081abb9771a3.img.jpg_200x200_d86753f0.jpg",
-      "title": "知音号游船"
+      "id": "3001",
+      "imgUrl": "static/images/history/(0)KunPengSquare.jpg",
+      "title": "鲲鹏广场"
     }, {
-      "id": "0002",
-      "imgUrl": "http://img1.qunarzz.com/sight/p0/1603/b1/b1da46b5326eb99e90.water.jpg_200x200_2f0a2f3f.jpg",
-      "title": "武汉欢乐谷"
+      "id": "3002",
+      "imgUrl": "static/images/history/(0)LaoTu.jpg",
+      "title": "老图书馆"
     }, {
-      "id": "0003",
-      "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/10/1012e4a2c398409c.water.jpg_200x200_366b12f8.jpg",
-      "title": "云雾山"
+      "id": "3003",
+      "imgUrl": "static/images/history/(0)LaoXiaomen.jpg",
+      "title": "老校门"
     }, {
-      "id": "0004",
-      "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/10/1012e4a2c398409c.water.jpg_200x200_366b12f8.jpg",
-      "title": "云雾山"
+      "id": "3004",
+      "imgUrl": "static/images/history/(0)XingZhengLou.jpg",
+      "title": "行政楼"
+    }, {
+      "id": "3005",
+      "imgUrl": "static/images/history/(0)ZheXueYuan.jpg",
+      "title": "哲学院"
+    }, {
+      "id": "3006",
+      "imgUrl": "static/images/history/(0LiuYiJiNianTing.jpg",
+      "title": "六一惨案纪念亭"
     }]
   }
 }

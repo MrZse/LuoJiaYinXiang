@@ -27,7 +27,7 @@ export default {
     lines () {
       const lines = []
       this.list.forEach((item, index) => {
-        const line = Math.floor(index / 3)
+        const line = Math.floor(index / 4)
         if (!lines[line]) {
           lines[line] = []
         }
@@ -73,8 +73,8 @@ export default {
   }
   .item-img{
     margin: 0 auto;
-    width: 14rem;
-    height: 10rem;
+    width: 10rem;
+    height: 14rem;
     padding: 1rem;
   }
   .item-title {

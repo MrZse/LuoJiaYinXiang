@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <div class="header">
       <p class="title">{{title}}</p>
     </div>
@@ -81,5 +81,8 @@ export default {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+  }
+  .wrapper {
+    margin-bottom: 2rem;
   }
 </style>
